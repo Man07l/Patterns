@@ -51,15 +51,19 @@
           <version>3.4.0</version>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>3.5.0</version>
           <executions>
             <execution>
               <goals>
-                <goal>exec</goal>
+                <goal>java</goal>
               </goals>
             </execution>
           </executions>
+          <configuration>
+          <mainClass>edu.eci.cvds.patterns.archetype.App</mainClass>
+          </configuration>
         </plugin>
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>

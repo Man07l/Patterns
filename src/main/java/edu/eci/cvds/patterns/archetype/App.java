@@ -1,10 +1,12 @@
 package edu.eci.cvds.patterns.archetype;
-
+import java.util.Scanner;
 /**
- * Hello world!
+ * Saludo personalizado
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        String nombre = scanner.next();
+        System.out.println(nombre);
     }
 }
